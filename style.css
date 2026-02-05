@@ -27,15 +27,15 @@
 }
 
 :root {
-	--background: #09090b; /* Майже чорний */
-	--header: linear-gradient(-90deg, #581c87, #701a75, #a21caf); /* Пурпуровий шторм */
-	--btn: #bef264; /* Неоновий лайм */
-	--promo: rgba(162, 28, 175, 0.2);
-	--table: rgba(24, 24, 27, 0.9);
-	--white: #f5f3ff;
-	--black: #09090b;
+	--background: #0d0221;
+	--header: linear-gradient(-90deg, #240b36, #c31432, #f472b6);
+	--btn: #2dd4bf;
+	--promo: rgba(195, 20, 50, 0.15);
+	--table: rgba(36, 11, 54, 0.9);
+	--white: #fdf2f8;
+	--black: #0d0221;
 	--title: #ffffff;
-	--btn-accent: linear-gradient(135deg, #d9f99d, #bef264);
+	--btn-accent: linear-gradient(135deg, #99f6e4, #2dd4bf);
 }
 
 * {
@@ -132,6 +132,7 @@ header {
 	position: sticky;
 	top: 0;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+	z-index: 100;
 }
 
 header img {
@@ -151,16 +152,16 @@ header img {
 	border: 1px solid var(--white);
 	color: var(--white);
 	margin-right: 50px;
-	transform: skewX(-5deg);
 }
 
 .green-btn {
+	position: relative;
 	padding: 12px 20px;
 	font-size: 1.2rem;
 	background-color: var(--btn);
+	outline: 2px solid var(--promo);
+	outline-offset: -5px;
 	color: var(--title);
-	border: 2px solid rgba(255, 255, 255, 0.3);
-	transform: skewX(-5deg);
 	text-align: center;
 }
 
@@ -182,6 +183,7 @@ header img {
 	flex-wrap: wrap;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	box-shadow: 0 0 15px var(--btn);
+	backdrop-filter: blur(3px);
 	padding: 20px;
 }
 

